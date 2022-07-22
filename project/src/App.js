@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { Mainpage } from './components/mainpage';
+import {Allroutes} from './components/allroutes/allroutes'
+import { Navbar } from './components/navbar/navbar';
+import { Bottom } from './components/bottom';
+import { useContext } from 'react';
+import { Appcontext } from './context/appcontext';
+
 
 function App() {
+  // let val=useContext(Appcontext)
+  // console.log('hello app',val)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+
+<Allroutes/>
+   <Bottom/>
     </div>
   );
 }
