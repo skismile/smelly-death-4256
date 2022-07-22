@@ -15,7 +15,9 @@ import {useNavigate} from 'react-router-dom'
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
       <>
-        <Button backgroundColor={'white'} _hover={"none"} onClick={onOpen}><span className="material-symbols-outlined">
+        <Button backgroundColor={'white'}
+         _hover={{background:'none',color:'blue'}} 
+         onClick={onOpen}><span className="material-symbols-outlined">
 language
 </span>English</Button>
   
@@ -83,7 +85,8 @@ language
     return (
       <>
         <Button backgroundColor={'white'}
-         _hover={"none"} onClick={onOpen}>Sing in</Button>
+       _hover={{background:'none',color:'blue'}} 
+         onClick={onOpen}>Sing in</Button>
   
         <Modal  isOpen={isOpen} onClose={onClose} >
           <ModalOverlay />
