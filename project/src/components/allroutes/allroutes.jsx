@@ -5,7 +5,7 @@ import {Routes,Route} from 'react-router-dom'
 import { About } from '../bottom/about'
 import { SinginForm } from '../singinForm'
 import { SingupForm } from '../singupForm'
-
+import {LoginSucess} from '../loginsuccess'
 export  const Allroutes=()=>{
 
 
@@ -16,6 +16,7 @@ return <div>
 <Route path={'/aboutus'}   element={<About/>}></Route>
 <Route path={'/singinform'} element={<SinginForm/>}></Route>
 <Route path={'/singupform'} element={<SingupForm/>}></Route>
+<Route path={'/loginsuccess'} element={<LoginSucess/>}></Route>
 
 
 </Routes>

@@ -78,7 +78,7 @@ function loginAuth()
         email:ele.email
       })
       alert('user loged in')
-     Navigate('/')
+     Navigate('/loginsuccess')
       return
     }
    
