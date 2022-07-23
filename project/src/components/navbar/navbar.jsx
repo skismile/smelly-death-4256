@@ -20,6 +20,7 @@ import {ChevronDownIcon } from '@chakra-ui/icons'
 import Language, { SinginNav } from './smallcompo'
 import { useContext } from 'react'
 import { Appcontext } from '../../context/appcontext'
+import { LogedUser } from './logeduser'
 
 export const Navbar=()=>{
 let navigate=useNavigate()
@@ -61,7 +62,7 @@ justifyContent:'space-between',
     <span className="material-symbols-outlined">
 apartment
 </span>
-    <Link to='#'>Stays</Link>
+    <Link to='/Hotels'>Stays</Link>
     </MenuItem>
     <MenuItem>
     <span className="material-symbols-outlined">
@@ -100,7 +101,7 @@ _hover={{color:'blue'}}
 >Trips</Box>
 <Box
  _hover={{color:'blue'} }
-  fontWeight={"var(--chakra-fontWeights-bold)"} >{Auth.login?<h4 style={{marginTop:'8px'}}>{Auth.firstname}</h4>:<SinginNav />}</Box>
+  fontWeight={"var(--chakra-fontWeights-bold)"} >{Auth.login?<LogedUser/>:<SinginNav />}</Box>
 
 </Box>
 

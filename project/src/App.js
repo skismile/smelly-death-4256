@@ -6,6 +6,7 @@ import { Navbar } from './components/navbar/navbar';
 import { Bottom } from './components/bottom';
 import { useContext } from 'react';
 import { Appcontext } from './context/appcontext';
+import { LogedUser } from './components/navbar/logeduser';
 
 
 function App() {

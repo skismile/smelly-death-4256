@@ -1,4 +1,4 @@
-import {Flex,Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import {Flex,Tabs, TabList, TabPanels, Tab, TabPanel,Input, Button } from '@chakra-ui/react'
 
 
 
@@ -22,19 +22,55 @@ export const Main1=()=>{
 
   <TabPanels>
     <TabPanel>
-      <p>one!</p>
+     
+      <Flex gap={'10px'}>
+    <Input placeholder='Going to'></Input>
+    <Input placeholder='Check-in'></Input>
+    <Input placeholder='Check-out' ></Input>
+    <Input placeholder='Travellers'></Input>
+</Flex>
+<br /><br />
+<Button p={'10px 40px 10px 40px'} bg={'#3662D8'} color={'white'}>Search</Button>
     </TabPanel>
     <TabPanel>
-      <p>two!</p>
+    <Flex gap={'10px'}>
+    <Input placeholder='Leaving from'></Input>
+    <Input placeholder='Going to'></Input>
+    <Input placeholder='Departing' ></Input>
+
+</Flex>
+<br /><br />
+<Button p={'10px 40px 10px 40px'} bg={'#3662D8'} color={'white'}>Search</Button>
     </TabPanel>
     <TabPanel>
-      <p>three!</p>
+    <Flex gap={'10px'}>
+    <Input  placeholder='Pick up'></Input>
+    <Input placeholder='Same as pick-up'></Input>
+    <Input placeholder='Pick-up Date' ></Input>
+    <Input placeholder='Drop-of Date'></Input>
+</Flex>
+<br /><br />
+<Button p={'10px 40px 10px 40px'} bg={'#3662D8'} color={'white'}>Search</Button>
     </TabPanel>
     <TabPanel>
-      <p>four!</p>
+    <Flex gap={'10px'}>
+    <Input placeholder='Leaving from'></Input>
+    <Input placeholder='Going to'></Input>
+    <Input placeholder='Departing' ></Input>
+    <Input placeholder='Returning'></Input>
+</Flex>
+<br /><br />
+<Button p={'10px 40px 10px 40px'} bg={'#3662D8'} color={'white'}>Search</Button>
     </TabPanel>
     <TabPanel>
-      <p>five!</p>
+    <Flex gap={'10px'}>
+    <Input placeholder='Things to do'></Input>
+    <Input placeholder='From'></Input>
+    <Input placeholder='To' ></Input>
+
+</Flex>
+<br /><br />
+<Button p={'10px 40px 10px 40px'} bg={'#3662D8'} color={'white'}>Search</Button>
     </TabPanel>
   </TabPanels>
 </Tabs>
