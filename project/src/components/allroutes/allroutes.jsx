@@ -6,6 +6,7 @@ import { About } from '../bottom/about'
 import { SinginForm } from '../singinForm'
 import { SingupForm } from '../singupForm'
 import {LoginSucess} from '../loginsuccess'
+import { Hotels } from '../Products/hotels'
 export  const Allroutes=()=>{
 
 
@@ -17,6 +18,7 @@ return <div>
 <Route path={'/singinform'} element={<SinginForm/>}></Route>
 <Route path={'/singupform'} element={<SingupForm/>}></Route>
 <Route path={'/loginsuccess'} element={<LoginSucess/>}></Route>
+<Route path={'/Hotels'} element={<Hotels/>}></Route>
 
 
 </Routes>

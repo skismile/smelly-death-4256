@@ -1,15 +1,15 @@
 import {
-    Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalBody,
-    ModalCloseButton,
-    Button,
-    Stack
-  } from '@chakra-ui/react'
-  import { useDisclosure } from '@chakra-ui/react'
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Button,
+  Stack
+} from '@chakra-ui/react'
+import { useDisclosure } from '@chakra-ui/react'
 import {useNavigate} from 'react-router-dom'
   export default function Language() {
     const { isOpen, onOpen, onClose } = useDisclosure()

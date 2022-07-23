@@ -1,4 +1,5 @@
 import {Box, Button,Flex,Spacer,Stack,Text} from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 import { Getapp } from './getApp'
 
 
@@ -47,9 +48,9 @@ return <div>
     </Box  >
       </Box>
 
-
+<Link to='/Hotels'>
 <Box
- border={'2px solid green'}
+//  border={'2px solid green'}
  boxSize={'200px'}
     // {
 //     md:'200px',
@@ -76,7 +77,7 @@ return <div>
 <Text color={'white'}>Book 60 days  in advance for 20% off select stays</Text>
 
 </Box>
-
+</Link>
         </Flex>
 
 
